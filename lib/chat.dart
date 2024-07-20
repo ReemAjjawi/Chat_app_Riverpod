@@ -45,7 +45,7 @@ class _ChatPageState extends State<ChatPage> {
                       title: Text(data[index]['message']),
                       trailing: Icon(Icons.arrow_forward),
                       onTap: () {
-                        // Handle item tap
+                  
                         print('Tapped on ${data[index]}');
                       },
                     ),
