@@ -28,7 +28,7 @@ class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Chat')),
+      appBar: AppBar(title: Text('Chat'),shadowColor: Color.fromARGB(255, 6, 44, 75),centerTitle: true,),
       body: Center(
         child: Consumer(builder: (context, ref, _) {
           final chatStream = ref.watch(chatStreamProvider);
@@ -38,6 +38,7 @@ class _ChatPageState extends State<ChatPage> {
                 itemCount: data.length,
                 itemBuilder: (context, index) {
                   return Card(
+                    color: Colors.blueAccent,
                     margin: EdgeInsets.all(8.0),
                     child: ListTile(
                       leading: Icon(Icons.label),
